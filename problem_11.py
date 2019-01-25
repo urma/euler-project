@@ -72,7 +72,7 @@ def main(stdscr):
     for column in range(0, len(GRID[0])):
       for valid_slice in valid_slices(row, column):
         display_current(stdscr, valid_slice)
-#        stdscr.getch()
+        time.sleep(0.025)
 
 if __name__ == '__main__':
   max_value = -1
